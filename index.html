@@ -9,12 +9,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <title>darcyposting | Portfolio</title>
 
     <style>
-        .social-header {
-    position: absolute;
-    top: 20px;
-    right: 30px;
+.social-header {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .social-header a {
@@ -90,12 +88,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     transition: background 0.5s;
 }
 
-    header {
-    position: relative;
-    text-align: center;
-    padding: 5rem 1rem;
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 3rem 0;
+
     background: white;
-    border-bottom: 1px solid #ddd;
 }
 
       header h1 {
@@ -109,6 +112,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
            color: #666;
         }
 
+        nav {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 2rem;
+
+    padding: 1rem 0 2rem;
+
+    border-bottom: 1px solid #ddd;
+}
+
         nav a {
             color: #00ffff;
             text-decoration: none;
@@ -121,13 +136,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             text-shadow: 0 0 8px #ff0099, 0 0 16px #ff0099;
         }
 
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem 0;
-        }
-
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
         .section {
             margin-bottom: 4rem;
         }
@@ -186,6 +199,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <header>
 
+    <div class="header-left">
+        <h1>darcyposting</h1>
+        <p>Editing • Videography • Writing</p>
+    </div>
+
     <div class="social-header">
         <a href="https://www.instagram.com/darcyposting/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
@@ -199,6 +217,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <i class="fa-brands fa-github"></i>
         </a>
     </div>
+
+</header>
 
     <h1>darcyposting</h1>
     <p>Editing • Videography • Writing</p>
