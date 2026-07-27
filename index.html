@@ -75,6 +75,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     width: 100%;
     display: block;
 }
+        .video-container video {
+    width: 100%;
+    display: block;
+}
+
+/* Behind the Scenes gallery */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: transform .25s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.02);
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    ...
+}
 
        body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -258,6 +289,27 @@ nav a {
     <p style="margin-top: 1rem;">
         Video project series: "Making the everyday cinematic"
     </p>
+
+</section>
+
+    <section id="bts" class="section">
+
+    <h2>On Set/h2>
+
+    <p style="margin-bottom:2rem;">
+        A selection of images and photographs from productions I've worked on.
+    </p>
+
+    <div class="photo-grid">
+
+        <img src="videos/HnN1.jpg" alt="Film set">
+        <img src="videos/HnN2.jpg" alt="Film set">
+        <img src="videos/WWND1.jpg" alt="Film set">
+        <img src="videos/WWND2.jpg" alt="Film set">
+        <img src="videos/WWND3.jpg" alt="Film set">
+        <img src="videos/WWND4.jpg" alt="Film set">
+
+    </div>
 
 </section>
 
