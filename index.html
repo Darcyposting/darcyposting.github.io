@@ -222,7 +222,12 @@ h2 {
     object-fit: cover;
     display: block;
 }
-
+.project-card video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
 .project-content {
     padding: 1.2rem;
 }
@@ -355,12 +360,19 @@ h2 {
     </div>
 </div>
 
-            <div class="project-card">
-                <h3>Interactive Storytelling</h3>
-                <p>Branching narrative experiments using Twine.</p>
-                <a href="https://twinery.org/2/#/stories/e290fa2d-2680-48dd-a4ca-99b10ccd2d1c/play">Play</a>
-            </div>
+<div class="project-card">
 
+    <video autoplay muted loop playsinline>
+        <source src="videos/480p showreel.mp4" type="video/mp4">
+    </video>
+
+    <div class="project-content">
+        <h3>Showreel</h3>
+        <p>A brief showreel of videos I didn't leave behind in Melbourne</p>
+        <a href="https://twinery.org/2/#/stories/e290fa2d-2680-48dd-a4ca-99b10ccd2d1c/play">Play</a>
+    </div>
+
+</div>
             <div class="project-card">
                    <img src="videos/countryzoning.png" alt="Country Zoning thumbnail">
                 <h3>Country Zoning</h3>
